@@ -9,8 +9,7 @@ import java.io.*;
 public class CompactDisc {
     public static void main(String[] args)throws IOException
     {
-        Scanner input = new Scanner(new File("C:\\Users\\tanal\\IdeaProjects\\ProjectPt3" +
-                "\\src\\main\\java\\org\\example\\Classics.txt")); //
+        Scanner input = new Scanner(new File("src/Classics.txt")); //
         String title;
         String artist;
         // ADD LINES FOR TASK #3 HERE
