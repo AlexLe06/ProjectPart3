@@ -1,5 +1,7 @@
 package org.example;
+import java.util.Arrays;
 import java.util.Scanner;
+
 
 public class Average {
     private int[] data = new int[5];
@@ -27,10 +29,15 @@ public class Average {
                 data[0],data[1],data[2],data[3],data[4], mean);
     }
 
-//    public void selectionSort(){
-//        for (int score : data){
-//            if score
-//        }
-//    }
+    public void selectionSort(){
+        Arrays.sort(data);
+
+        for (int i = 0; i < data.length / 2; i++) {
+            int t = data[i];
+            data[i] = data[data.length - i - 1];
+            data[data.length - i - 1] = t;
+
+        }
+    }
 
 }
