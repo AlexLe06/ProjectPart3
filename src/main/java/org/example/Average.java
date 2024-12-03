@@ -24,8 +24,7 @@ public class Average {
         mean = (sum/data.length);
     }
     public String toString() {
-
-        return String.format("%d, %d, %d, %d, %d, %f" ,
+        return String.format("%d, %d, %d, %d, %d, %.2f" ,
                 data[0],data[1],data[2],data[3],data[4], mean);
     }
 
@@ -36,7 +35,6 @@ public class Average {
             int t = data[i];
             data[i] = data[data.length - i - 1];
             data[data.length - i - 1] = t;
-
         }
     }
 
